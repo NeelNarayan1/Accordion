@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Accordion.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "grandparent">
+    <div class = "parent">
+        
+        
+<div class = "accordionblock">
+    <div class = "child">Running</div>
+    <p  class = "baby">
+        The skill of running includes jogging, sprinting, chasing, dodging <br>and evading. All of these are important to many games (e.g. tag),<br> sports (e.g. athletics) and everyday activities (e.g. running<br> to get to school on time).
+    </p>
+</div>
+
+    </div>
+    <div class = "parent">
+        
+        <div class = "accordionblock">
+            <div class = "child">Walking</div>
+            <p  class = "baby">
+                For example, regular brisk walking can help you: Maintain a <br>healthy weight and lose body fat. Prevent or manage various conditions,<br> including heart disease, stroke, high blood pressure, cancer<br> and type 2 diabetes. Improve cardiovascular fitness. Strengthen your bones <br>and muscles.
+            </p>
+        </div>
+        
+            </div>
+            <div class = "parent">
+        
+                <div class = "accordionblock">
+                    <div class = "child">Jogging</div>
+                    <p  class = "baby">
+                        Regularly jogging can help you lose weight, especially<br> if you also modify your diet. Jogging can also help you improve your heart<br> health and immune system, reduce insulin resistance, cope<br> with stress and depression, and maintain flexibility as you age.
+                    </p>
+                </div>
+                
+                    </div>
+                </div>
+    <script>
+var notshow = document.getElementsByClassName("child");
+console.log(notshow)
+for(i=0; i<notshow.length; i++){
+    notshow[i].addEventListener("click", function(){
+        var thing = this.nextElementSibling;
+    
+        if(thing.style.display== "none"){
+            thing.style.display = "block"
+        } else{
+            thing.style.display= "none";
+        }
+        
+    })
+    
+}
+    </script>
+</body>
+</html>

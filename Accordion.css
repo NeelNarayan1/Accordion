@@ -1,0 +1,32 @@
+
+.grandparent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.parent{
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.accordionblock{
+    width: 600px;
+}
+.child{
+    background-color: #eee;
+    padding: 5px;
+    width:600px
+    
+}
+.child:hover{
+    background-color: #ccc;
+}
+.baby{
+    background-color: rgb(251, 246, 246);
+    
+    
+}
